@@ -62,5 +62,23 @@ table {
 
 /* Column Size for thead */
 
+.content_td img {
+  overflow-y: auto;
+  height: 100%;
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: scale-down;
+}
 
 /* Column size for tbody */
+/*Off-color: #ffeec9*/
+.content_row:nth-child(2n + 1) {
+  background-color: #ffeec9;
+}
+
+.content_td { 
+  width: 1%; 
+}
+.content_td:nth-child(3), .content_td:nth-child(4) {
+  width: 50%;
+}
