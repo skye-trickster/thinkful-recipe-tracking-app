@@ -80,7 +80,7 @@ td:nth-child(4), td:nth-child(5) {
 }
 
 /* Column size for tbody */
-.content_row:nth-child(2n + 1) {
+.content_row tr:nth-child(2n + 1) {
   background-color: #ffeec9;
 }
 

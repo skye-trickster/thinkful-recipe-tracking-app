@@ -5,7 +5,7 @@ function Recipe({recipe, index, deleteRecipe}) {
     const deleteHandler = () => deleteRecipe(index)
 
     return (
-        <tr className="content_row">
+        <tr>
             <td className="content_td"><p>{recipe.name}</p></td>
             <td className="content_td"><p>{recipe.cuisine}</p></td>
             <td className="content_td"><img src={recipe.photo} /></td>

@@ -34,7 +34,7 @@ function RecipeCreate({createRecipe}) {
   return (
     <form name="create" onSubmit={submitHandler}>
       <table>
-        <tbody>
+        <tbody className="content_row">
           <tr>
             <td>
               <input type="text" value={formData.name} onChange={editValue} name="name" placeholder="Name"/>

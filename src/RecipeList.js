@@ -20,7 +20,7 @@ function RecipeList({recipes, deleteRecipe}) {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="content_row">
           { 
             recipes.map((recipe, index) => 
               ( <Recipe key={index} index={index} deleteRecipe={deleteRecipe} recipe={recipe} /> )
