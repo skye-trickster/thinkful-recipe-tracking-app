@@ -13,6 +13,12 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.heading {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 64px;
+}
+
 /* typography */
 
 html {
