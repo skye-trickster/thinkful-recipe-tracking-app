@@ -1,6 +1,8 @@
 import React from "react"
 
-function Recipe({recipe}) {
+function Recipe({recipe, index, deleteRecipe}) {
+
+    const deleteHandler = () => deleteRecipe(index)
 
     return (
         <tr className="content_row">
@@ -9,7 +11,7 @@ function Recipe({recipe}) {
             <td className="content_td"><img src={recipe.photo} /></td>
             <td className="content_td"><p>{recipe.ingredients}</p></td>
             <td className="content_td"><p>{recipe.preparation}</p></td>
-            <td><button name="delete">Delete</button></td>
+            <td><button name="delete" onClick={deleteHandler}>Delete</button></td>
         </tr>
     )
 }
