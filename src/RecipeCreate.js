@@ -11,7 +11,21 @@ function RecipeCreate() {
       <table>
         <tbody>
           <tr>
-            <td></td>
+            <td>
+              <input type="text" name="name" placeholder="Name"/>
+            </td>
+            <td>
+              <input type="text" name="cuisine" placeholder="Cuisine"/>
+            </td>
+            <td>
+              <input type="url" name="photo" placeholder="URL"/>
+            </td>
+            <td>
+              <textarea type="text" name="ingredients" placeholder="Ingredients" />
+            </td>
+            <td>
+              <textarea type="text" name="ingredients" placeholder="Preparation"/>
+            </td>
             <td>
               <button type="submit">Create</button>
             </td>
