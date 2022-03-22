@@ -37,19 +37,19 @@ function RecipeCreate({createRecipe}) {
         <tbody className="content_row">
           <tr>
             <td>
-              <input type="text" value={formData.name} onChange={editValue} name="name" placeholder="Name"/>
+              <input type="text" value={formData.name} onChange={editValue} name="name" required placeholder="Name"/>
             </td>
             <td>
-              <input type="text" value={formData.cuisine} onChange={editValue} name="cuisine" placeholder="Cuisine"/>
+              <input type="text" value={formData.cuisine} onChange={editValue} name="cuisine" required placeholder="Cuisine"/>
             </td>
             <td>
-              <input type="url" value={formData.photo} onChange={editValue} name="photo" placeholder="URL"/>
+              <input type="url" value={formData.photo} onChange={editValue} name="photo" required placeholder="URL"/>
             </td>
             <td>
-              <textarea type="text" value={formData.ingredients} onChange={editValue} name="ingredients" placeholder="Ingredients" />
+              <textarea type="text" value={formData.ingredients} onChange={editValue} name="ingredients" required placeholder="Ingredients" />
             </td>
             <td>
-              <textarea type="text" value={formData.preparation} onChange={editValue} name="preparation" placeholder="Preparation"/>
+              <textarea type="text" value={formData.preparation} onChange={editValue} name="preparation" required placeholder="Preparation"/>
             </td>
             <td>
               <button type="submit">Create</button>
